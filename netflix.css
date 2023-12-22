@@ -96,7 +96,7 @@ span:nth-child(3){
     opacity: 0.7;
     height: 35px;
     min-width: 30px;
-    padding: 10px 17vw 10px 17px;
+    padding: 10px 5vw 10px 17px;
 }
 .mid button{
     background-color: red;
