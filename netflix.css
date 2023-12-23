@@ -96,8 +96,7 @@ span:nth-child(3){
     opacity: 0.7;
     height: 35px;
     min-width: 30px;
-/*     padding: 10px 5vw 10px 17px; */
-    padding:3px 24px
+    padding: 10px 10vw 10px 20px;
 }
 .mid button{
     background-color: red;
@@ -172,9 +171,9 @@ span:nth-child(3){
     font-family: 'Martel Sans', sans-serif;
     padding: 56px 1px;
 }
-.msg:first-of-type{
+/* .msg:first-of-type{
     padding: 56px 20px ;
-}
+} */
 .msg h1{
     font-weight: bolder;
     font-size: 40px;
@@ -476,10 +475,35 @@ footer{
         align-items: flex-start;
     }
 }
+@media only screen and (max-width:230px){
+    body{
+        width: 200vw;
+    }
+    span *{
+        width: 0px;
+    }
+    h1 *{
+        width: 0px;
+    }
+    p *{
+        width: 0px;
+    }
+    h6 *{
+        width: 0px;
+    }
+
+}
+
 @media only screen and (max-width:345px){
     .mid{
         padding: 0px;
         margin: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .main{
+        background-size: max(1450px,100vw);
     }
     .main{
         height: 100%;
@@ -489,16 +513,17 @@ footer{
     }
     .mid input{
         width: 200px;
-        padding: 5px 2px 5px 2px;
+        padding: 5px 1vw 5px 1vw;
     }
     .mid button {
-        padding: 5px 2px 5px 2px;
-        width: 100px;
+        padding: 2px 2px 6px 2px;
+        /* width: 100px; */
     }
     .mid button p{
-        padding: 5px 2px 5px 2px;
-        width: 100px;
-        font-size: 14px;
+        /* padding: 5px 2px 10px 2px; */
+        padding: auto;
+        /* width: 100px; */
+        /* font-size: 1px; */
     }
 
 }
